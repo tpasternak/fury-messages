@@ -1,0 +1,52 @@
+version	3
+schemas	default	id	default
+		projects	messages	id	messages
+				modules	hello	id	hello
+						kind	Library
+						main	None
+						plugin	None
+						manifest	
+						compiler	projectId	scala
+							moduleId	compiler
+							intransitive	true
+							hidden	false
+						after	
+						params	
+						sources	src	src
+						binaries	
+						resources	
+						bloopSpec	None
+				main	Some	hello
+				license	unknown
+				description	
+				compiler	None
+			scala	id	scala
+				modules	compiler	id	compiler
+						kind	Compiler
+						main	None
+						plugin	None
+						manifest	
+						compiler	projectId	java
+							moduleId	compiler
+							intransitive	false
+							hidden	false
+						after	
+						params	
+						sources	
+						binaries	org.scala-lang:scala-compiler:2.12.8	binRepo	central
+								group	org.scala-lang
+								artifact	scala-compiler
+								version	2.12.8
+						resources	
+						bloopSpec	Some	org	scala-lang.org
+								name	scala-compiler
+								version	2.12.8
+				main	Some	compiler
+				license	unknown
+				description	
+				compiler	None
+		repos	
+		imports	
+		main	Some	messages
+main	default
+aliases	
