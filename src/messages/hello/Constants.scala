@@ -1,6 +1,8 @@
 package messages.hello
 
 object Constants {
-  def helloPl = "Witaj, świecie"
-  def helloEn = "Hello, world"
+  def helloMsgs = Map(
+    "pl" -> "Witaj, świecie",
+    "en" -> "Hello, world"
+  )
 }
